@@ -27,9 +27,16 @@
          course: i % 2 === 0 ? "B.Tech" : "BCA",
          phone: `9${Math.floor(100000000 + Math.random() * 900000000)}`,
          photo:
-           i % 2 === 0
-             ? `https://randomuser.me/api/portraits/men/${i + 1}.jpg`
-             : `https://randomuser.me/api/portraits/women/${i + 1}.jpg`,
+           const students = Array.from({ length: 10 }, (_, i) => ({
+  id: i + 1,
+  name: `Student ${i + 1}`,
+  room: `Room ${101 + i}`,
+  photo:
+    i % 2 === 0
+      ? "https://tse4.mm.bing.net/th/id/OIP.U828eE6tS7Vej6Dt6jWdBgHaEK?pid=Api&P=0&h=180"
+      : "https://husbandsinfo.com/wp-content/uploads/2025/11/Smriti-Mandhana-768x448.png",
+}));
+
        }));
        db.set("students", saved);
      }
