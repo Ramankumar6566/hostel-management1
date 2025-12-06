@@ -32,9 +32,10 @@
   name: `Student ${i + 1}`,
   room: `Room ${101 + i}`,
   photo:
-    i % 2 === 0
-      ? "https://tse4.mm.bing.net/th/id/OIP.U828eE6tS7Vej6Dt6jWdBgHaEK?pid=Api&P=0&h=180"
-      : "https://husbandsinfo.com/wp-content/uploads/2025/11/Smriti-Mandhana-768x448.png",
+  i % 2 === 0
+    ? "/images/cricketers/men.jpg"
+    : "/images/cricketers/women.jpg",
+
 }));
 
        }));
